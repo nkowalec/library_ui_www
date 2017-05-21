@@ -111,6 +111,7 @@ body {
   height: inherit;
   vertical-align: top;
   word-wrap: break-word;
+  text-align: justify;
 }
 
 .col .book-img {
@@ -127,4 +128,41 @@ body {
 
 .inactive {
   background-color: red;
+}
+
+.ordered {
+  background-color: orange;
+}
+
+#search {
+  width: 100%;
+  text-align: right;
+  height: 30px;
+}
+
+#search div {
+  border: 1px solid #333;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 10px;
+}
+
+#search input {
+  margin: 0px 0px 0px 15px;
+  height: 30px;
+  border: none;
+  vertical-align: top;
+}
+
+#search button {
+  margin-right: 5px;
+  height: 20px;
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#search a {
+  margin-right: 10px;
 }

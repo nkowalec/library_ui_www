@@ -40,6 +40,16 @@ function clickConvert(){
   }
 }
 
+function searchToogle(){
+  console.log("toogle");
+  var e = document.getElementById('search');
+  if(e.style.display == "none"){
+    e.style.display = "block";
+  }else{
+    e.style.display = "none";
+  }
+}
+
 
 includeAll();
 clickConvert();
