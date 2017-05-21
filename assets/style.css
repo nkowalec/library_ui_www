@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+  margin-top: 25px;
+  //margin-bottom: 25px;
+}
+
+.header {
+  margin: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  vertical-align: middle;
+  background-color: #EEE;
+  box-shadow: 2px 2px 5px #DDD;
+}
+
+.logo {
+  float: left;
+  width: auto;
+  color: #444;
+  margin-left: 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-shadow: 2px 2px 2px #DDD;
+}
+
+.logo:hover {
+  color: #666;
+  text-shadow: -2px -2px 2px #DDD;
+}
+
+.menu {
+  float: right;
+  height: 35px;
+}
+
+.menu ul {
+  margin: 0;
+}
+
+.menu li {
+  display: inline;
+  line-height: 35px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.menu li:hover {
+  border-bottom: 2px solid #333;
+}
+
+.menu a {
+  color: #333;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #DDD;
+}
+
+.menu a:visited {
+  color: #333;
+}
+
+.menu a:hover {
+  text-shadow: -1px -1px 2px #DDD;
+  color: #666;
+}
+
+.footer {
+  margin: auto;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  background-color: #333;
+  color: #EEE;
+  text-align: right;
+  font-size: 12px;
+  text-shadow: 1px 1px 2px #666;
+}
+
+.row {
+  width: 100%;
+}
+
+.col {
+  width: 300px;
+  margin-left: 15px;
+  margin-bottom: 25px;
+  display: inline-block;
+  padding: 5px;
+  box-shadow: 2px 2px 5px #333;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.col:active {
+  box-shadow: -2px -2px 5px #333;
+}
+
+.col .book-opis {
+  margin-left: 5px;
+  width: 155px;
+  display: inline-block;
+  height: inherit;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+.col .book-img {
+  height: 180px;
+}
+
+.status {
+  height: 5px; width: 100%;
+}
+
+.active {
+  background-color: #00ff00;
+}
+
+.inactive {
+  background-color: red;
+}
