@@ -50,6 +50,10 @@ function searchToogle(){
   }
 }
 
+function searchEnter(){
+  alert("Wyszukiwanie: " + document.getElementById('search').getElementsByTagName('input')[0].value);
+}
+
 
 includeAll();
 clickConvert();
