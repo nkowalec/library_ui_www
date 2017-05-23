@@ -15,6 +15,7 @@ function includeAll(){
           e.removeAttribute('data-include');
           includeAll();
           clickConvert();
+          handleLogin();
         }
       }
       req.open("GET", attr, true);
@@ -53,6 +54,28 @@ function searchEnter(){
   alert("Wyszukiwanie: " + document.getElementById('search').getElementsByTagName('input')[0].value);
 }
 
+function onLoginSubmit() {
+  let item = document.getElementsByName('login')[0].value;
+  window.sessionStorage.login = item;
+}
+
+function handleLogin() {
+  let login = window.sessionStorage.login;
+  if(login){
+    var elemLoggedIn = document.getElementById('loggedin');
+    var elemLoginName = document.getElementById('loginname');
+    var elemLogin = document.getElementById('login');
+
+    elemLoginName.innerText = login;
+    elemLoggedIn.style.display = "inline-block";
+    elemLogin.style.display = "none";
+  }
+}
+
+function logout() {
+  window.sessionStorage.removeItem('login');
+  window.location.href = getBase() + "index.html";
+}
 
 includeAll();
 clickConvert();

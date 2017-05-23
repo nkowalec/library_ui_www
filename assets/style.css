@@ -269,3 +269,7 @@ body {
   text-align: justify;
   vertical-align: top;
 }
+
+#loggedin {
+  display: none;
+}

@@ -19,12 +19,12 @@
     <div data-include="fragments/search.html" style="display: none;" id="search"></div>
     <img src="img/books.jpg" alt="books" class="login-img" />
     <div class="container">
-      <div class="login-box">
-        <img src="img/glasses_w.png" alt="glasses" />
-        <input type="text" name="login" value="" placeholder="Login"><br />
-        <input type="password" name="pass" value="" placeholder="Hasło"><br />
-        <button type="button" name="button">ZALOGUJ</button>
-      </div>
+      <form class="login-box" action="index.html" onsubmit="return onLoginSubmit();">
+          <img src="img/glasses_w.png" alt="glasses" />
+          <input type="text" name="login" value="" placeholder="Login" required><br />
+          <input type="password" name="pass" value="" placeholder="Hasło" required><br /><br />
+          <button type="submit" name="button">ZALOGUJ</button>
+      </form>
     </div>
     <div data-include="fragments/footer.html"></div>
   </body>
