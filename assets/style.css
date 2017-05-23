@@ -251,3 +251,21 @@ body {
   width: 100%;
   z-index: -10;
 }
+
+.google-map {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.google-map td {
+  width: 200px;
+}
+
+.library-info {
+  display: inline-block;
+  width: 400px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  text-align: justify;
+  vertical-align: top;
+}
