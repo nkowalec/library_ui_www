@@ -1,3 +1,7 @@
+function getBase(){
+  return "/testy_js/";
+}
+
 function includeAll(){
   var elems = document.getElementsByTagName('*');
   for (var i = 0; i < elems.length; i++) {
@@ -18,11 +22,6 @@ function includeAll(){
       return;
     }
   }
-}
-
-function getBase(){
-  var base = document.getElementsByTagName('base')[0];
-  return base.getAttribute('href');
 }
 
 function clickConvert(){
