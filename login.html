@@ -7,12 +7,25 @@
     <link rel="stylesheet" href="assets/style.css" />
     <base href="/testy_js/">
     <title>library_ui</title>
+    <style>
+      .footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    </style>
   </head>
   <body>
     <div data-include="fragments/header.html"></div>
     <div data-include="fragments/search.html" style="display: none;" id="search"></div>
+    <img src="img/books.jpg" alt="books" class="login-img" />
     <div class="container">
-      
+      <div class="login-box">
+        <img src="img/glasses_w.png" alt="glasses" />
+        <input type="text" name="login" value="" placeholder="Login"><br />
+        <input type="password" name="pass" value="" placeholder="Hasło"><br />
+        <button type="button" name="button">ZALOGUJ</button>
+      </div>
     </div>
     <div data-include="fragments/footer.html"></div>
   </body>
