@@ -9,8 +9,8 @@
   </head>
   <body>
     <div data-include="fragments/header.html"></div>
-    <div data-include="fragments/search.html" style="display: none;" id="search"></div>
     <div data-include="fragments/dashboard.html" id="dashboard"></div>
+    <div data-include="fragments/search.html" style="display: none;" id="search"></div>
     <div class="container">
       <div class="row">
         <div class="col">
@@ -125,6 +125,18 @@
       </div>
     </div>
     <div data-include="fragments/footer.html"></div>
+
+    <div class="modal" id="chg-password">
+      <div class="modal-content">
+        <form action="index.html" onsubmit="changePasswordClose();">
+          <span>Aktualne hasło:</span><br /> <input type="password" name="" value="" required><br />
+          <span>Nowe hasło:</span><br /> <input type="password" name="" value="" required><br />
+          <span>Powtórz hasło:</span><br /> <input type="password" name="" value="" required><br /><br />
+          <button type="submit" name="button" class="btn btn-info">ZAPISZ</button>
+          <button type="button" name="button" class="btn inactive" onclick="changePasswordClose();">ANULUJ</button>
+        </form>
+      </div>
+    </div>
   </body>
   <script type="text/javascript" src="assets/script.js"></script>
 </html>

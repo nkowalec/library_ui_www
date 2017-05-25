@@ -64,19 +64,29 @@ function handleLogin() {
   if(login){
     var elemLoggedIn = document.getElementById('loggedin');
     var elemLoginName = document.getElementById('loginname');
+    var elemLoginName2 = document.getElementById('login-name');
     var elemLogin = document.getElementById('login');
     var elemDash = document.getElementById('dashboard');
 
     elemLoginName.innerText = login;
     elemLoggedIn.style.display = "inline-block";
     elemLogin.style.display = "none";
-    elemDash.style.display = "flex";
+    if(elemDash) elemDash.style.display = "flex";
+    if(elemLoginName2) elemLoginName2.innerText = login;
   }
 }
 
 function logout() {
   window.sessionStorage.removeItem('login');
   window.location.href = getBase() + "index.html";
+}
+
+function changePassword() {
+   document.getElementById('chg-password').style.display = "block";
+}
+
+function changePasswordClose() {
+  document.getElementById('chg-password').style.display = "none";
 }
 
 includeAll();

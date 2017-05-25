@@ -1,9 +1,32 @@
 <div class="column column-one">
-1
+  <b>Testowy Operator</b> (<span id="login-name"></span>)<br /><br />
+  <table>
+    <tr>
+      <td>Aktualnie wypożyczonych książek:</td>
+      <td><b>1</b></td>
+    </tr>
+    <tr>
+      <td>Wypożyczonych ogółem:</td>
+      <td><b>4</b></td>
+    </tr>
+  </table>
+  <br />
+  <button type="button" class="btn inactive" onclick="logout();">WYLOGUJ</button>
+  <button type="button" class="btn btn-info" onclick="changePassword();">ZMIEŃ HASŁO</button>
 </div>
 <div class="column column-two">
-2
+  <b>Aktualnie wypożyczone</b> <br /><br />
+  <table>
+    <tr>
+      <td>(005 Gre) Symfonia C++ </td>
+      <td><span class="text-success">Do 2017-07-01<span></td>
+      <td><a href="#" onclick="alert('Nie możesz przedłużyć terminu, książka została zarezerwowana.');">Przedłuż</a></td>
+    </tr>
+  </table>
 </div>
 <div class="column column-three">
-3
+  <b>Historia wypożyczeń</b><br /><br />
+  (004 Gaj) Wzorce projektowe<br />
+  (004 Mar) Czysty kod<br />
+  (004 Kun) Angular 2
 </div>
