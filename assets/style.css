@@ -367,3 +367,21 @@ body {
 .column a:visited {
   color: #3277b3;
 }
+
+.adv-search {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.adv-search td {
+  width: 200px;
+  text-align: left;
+}
+
+.adv-search table {
+  margin: auto;
+}
+
+.adv-search select, .adv-search input[type=text] {
+  width: 200px;
+}

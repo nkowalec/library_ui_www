@@ -6,12 +6,95 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="assets/style.css" />
     <title>library_ui</title>
+    <style>
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+      }
+    </style>
   </head>
   <body>
     <div data-include="fragments/header.html"></div>
     <div data-include="fragments/search.html" style="display: none;" id="search"></div>
-    <div class="container">
-
+    <div class="container adv-search">
+      <table>
+        <tr>
+          <td>Wyszukiwane słowo lub fraza</td>
+          <td><input type="text" name="adv-search-box" value=""></td>
+        </tr>
+        <tr>
+          <td>Pole do wyszukiwania</td>
+          <td>
+            <select name=find_code>
+             <option value=WRD>Wszystkie pola</option>
+             <option value=WAU>Autor</option>
+             <option value=TIT>Dokładny tytuł</option>
+             <option value=WTI>Słowa w tytule</option>
+             <option value=WSU>Hasło przedmiotowe</option>
+             <option value=WNB>Narzędzie badawcze</option>
+             <option value=WAN>Hasło przedmiotowe w jęz. angielskim</option>
+             <option value=WKU>Klucz autorski</option>
+             <option value=WMG>Promotor</option>
+             <option value=WKI>Kierunek</option>
+             <option value=WPU>Wydawca</option>
+             <option value=WSE>Seria</option>
+             <option value=WSY>Sygnatura</option>
+             <option value=WOP>Status opracowania</option>
+             <option value=020>ISBN</option>
+             <option value=022>ISSN</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Słowa sąsiadujące?</td>
+          <td>
+            <input Type="radio" name="adjacent" checked value="N"> Nie
+            <input type="radio" name="adjacent" value="Y"> Tak
+          </td>
+        </tr>
+        <tr>
+          <td>Język</td>
+          <td>
+            <select name="filter_request_1">
+              <option value="">Wszystkie</option>
+              <option value="POL">polski</option>
+              <option value="ENG">angielski</option>
+              <option value="ARA">arabski</option>
+              <option value="BEL">białoruski</option>
+              <option value="CZE">czeski</option>
+              <option value="CHI">chiński</option>
+              <option value="DAN">duński</option>
+              <option value="FRE">francuski</option>
+              <option value="FIN">fiński</option>
+              <option value="GRE">grecki</option>
+              <option value="SPA">hiszpański</option>
+              <option value="ICE">islandzki</option>
+              <option value="KOR">koreański</option>
+              <option value="LAT">łaciński</option>
+              <option value="GER">niemiecki</option>
+              <option value="NOR">norweski</option>
+              <option value="RUS">rosyjski</option>
+              <option value="SLO">słowacki</option>
+              <option value="SLV">słoweński</option>
+              <option value="SWE">szwedzki</option>
+              <option value="UKR">ukraiński</option>
+              <option value="ITA">włoski</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Od roku</td>
+          <td><select class="year-pick" name="year1"></select></td>
+        </tr>
+        <tr>
+          <td>Do roku</td>
+          <td><select class="year-pick" name="year2"></select></td>
+        </tr>
+      </table>
+      <br /><br />
+      <button type="button" name="button" class="btn btn-info"
+        onclick="alert('Wyszukiwanie: '+document.getElementsByName('adv-search-box')[0].value);">&nbsp;&nbsp;&nbsp;SZUKAJ&nbsp;&nbsp;&nbsp;</button>
     </div>
     <div data-include="fragments/footer.html"></div>
   </body>

@@ -89,5 +89,24 @@ function changePasswordClose() {
   document.getElementById('chg-password').style.display = "none";
 }
 
+function yearPickerOptionsCreate() {
+  var elems = document.getElementsByClassName('year-pick');
+  for(let i = 0; i < elems.length; i++) {
+    let e = elems[i];
+    if(e.tagName === "SELECT"){
+      let year = new Date().getFullYear();
+      var optionEmpty = document.createElement("option");
+      optionEmpty.text = "";
+      e.add(optionEmpty);
+      for(let y = 1900; y <= year; y++) {
+        let option = document.createElement("option");
+        option.text = y;
+        e.add(option);
+      }
+    }
+  }
+}
+
 includeAll();
 clickConvert();
+yearPickerOptionsCreate();
