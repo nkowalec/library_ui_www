@@ -65,10 +65,12 @@ function handleLogin() {
     var elemLoggedIn = document.getElementById('loggedin');
     var elemLoginName = document.getElementById('loginname');
     var elemLogin = document.getElementById('login');
+    var elemDash = document.getElementById('dashboard');
 
     elemLoginName.innerText = login;
     elemLoggedIn.style.display = "inline-block";
     elemLogin.style.display = "none";
+    elemDash.style.display = "flex";
   }
 }
 
