@@ -335,13 +335,18 @@ body {
 
 .modal-content {
   background-color: #333;
-  margin: 10% auto;
+  margin: 2% auto;
   padding: 60px;
   padding-left: 150px;
   border: 1px solid #888;
-  width: 30%;
+  width: 80%;
   color: #eee;
   border-radius: 10px;
+}
+
+#chg-password .modal-content {
+  width: 30%;
+  margin-top: 10%;
 }
 
 .modal-content input {
@@ -384,4 +389,15 @@ body {
 
 .adv-search select, .adv-search input[type=text] {
   width: 200px;
+}
+
+.book-view-info {
+  margin-left: 25px;
+  width: auto !important;
+  max-width: 600px;
+}
+
+small {
+  font-size: 10px;
+  font-weight: lighter;
 }

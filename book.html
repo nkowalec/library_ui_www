@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>library_ui</title>
+    <style>
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-include="fragments/header.html"></div>
+    <div data-include="fragments/search.html" style="display: none;" id="search"></div>
+    <div class="container">
+      <img src="img/czysty-kod.jpg" class="book-img" />
+      <div class="book-view-info library-info">
+        <h2>Tytuł: Czysty kod <small> (<a href="#" onclick="bookshelf();">zobacz na półce</a>)</small></h2>
+        <b>Wydawnictwo:</b>Helion <br />
+        <b>Autor:</b> Robert C. Martin <br />
+        <b>Sygnatura:</b> 004 Mar <br />
+        <b>IBAN:</b> 978-83-283-0234-1, 9788328302341 <br />
+        <b>Tytuł oryginału:</b> <i>"Clean Code: A Handbook of Agile Software Craftsmanship"</i> <br />
+        <b>Tłumaczenie:</b> Paweł Gonera <br />
+        <b>Rok wydania:</b> 2010 <br />
+        <b>Stron:</b> 424 <br /><br />
+        <h3>Opis książki:</h3>
+        <p>
+          <b>Poznaj najlepsze metody tworzenia doskonałego kodu</b><br />
+
+          <ul>
+            <li>Jak pisać dobry kod, a zły przekształcić w dobry?</li>
+            <li>Jak formatować kod, aby osiągnąć maksymalną czytelność?</li>
+            <li>Jak implementować pełną obsługę błędów bez zaśmiecania logiki kodu?</li>
+          </ul>
+
+
+          O tym, ile problemów sprawia niedbale napisany kod, wie każdy programista.
+          Nie wszyscy jednak wiedzą, jak napisać ten świetny, „czysty” kod i czym właściwie powinien się on charakteryzować.
+          Co więcej – jak odróżnić dobry kod od złego? Odpowiedź na te pytania oraz sposoby tworzenia czystego,
+          czytelnego kodu znajdziesz właśnie w tej książce. Podręcznik jest obowiązkową pozycją dla każdego,
+          kto chce poznać techniki rzetelnego i efektywnego programowania. <br /><br />
+        </p>
+      </div>
+    </div>
+    <div data-include="fragments/footer.html"></div>
+
+    <div class="modal" id="bookshelf" onclick="bookshelfClose();">
+      <div class="modal-content">
+        <img src="img/regal.png" alt="regal">
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="assets/script.js"></script>
+</html>
